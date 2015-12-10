@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/yutakakinjyo/circletime.svg)](https://travis-ci.org/yutakakinjyo/circletime)
 
-CircleTiem get amount of build time from organization on CieclrCI.
+CircleTime get amount of build time from organization on CieclrCI.
 
 ## Installation
 
