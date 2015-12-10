@@ -36,7 +36,7 @@ and set your circle ci access token like following
 CIRCLE_CI_TOKEN='your access token'
 ```
 
-## Get build time
+## get build time
 
 ```ruby
 require 'circlecitime'
@@ -49,7 +49,7 @@ today = build_time.today
 puts today / 1000.0 / 60 # min
 ```
 
-you can get some term.
+you also can get any term.
 
 ```ruby
 yestaday = build_time.yestaday
