@@ -36,7 +36,7 @@ and set your CircleCI access token like a following
 CIRCLE_CI_TOKEN='your access token'
 ```
 
-## get build time
+### get build time
 
 ```ruby
 require 'circletime'
