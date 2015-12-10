@@ -29,7 +29,7 @@ Or install it yourself as:
 mv .env.sample .env
 ```
 
-and set your circle ci access token like following
+and set your CircleCI access token like a following
 
 .env
 ```
