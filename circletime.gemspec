@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["yutakakinjyo"]
   spec.email         = ["yutakakinjyo@gmail.com"]
 
-  spec.summary       = %q{ get circleci amount of build time from organization. }
+  spec.summary       = %q{ CircleTime get amount of build time from organization on CircleCI. }
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/yutakakinjyo/circletime"
   spec.license       = "MIT"
