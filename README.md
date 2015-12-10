@@ -23,6 +23,8 @@ Or install it yourself as:
 
 ## Usage
 
+### prepare
+
 ```
 mv .env.sample .env
 ```
@@ -33,6 +35,8 @@ and set your circle ci access token like following
 ```
 CIRCLE_CI_TOKEN='your access token'
 ```
+
+## Get build time
 
 ```ruby
 require 'circlecitime'
