@@ -44,7 +44,7 @@ require 'circletime'
 build_time = CircleTime::BuildTime.new("specify organization name")
 
 # you will get msec of build time
-today = build_time.week
+today = build_time.today
 
 puts today / 1000 / 60 # min
 ```
