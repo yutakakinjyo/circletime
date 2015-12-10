@@ -39,14 +39,14 @@ CIRCLE_CI_TOKEN='your access token'
 ## get build time
 
 ```ruby
-require 'circlecitime'
+require 'circletime'
 
-build_time = CircleTime::BuildTime.new("specify organizaion name")
+build_time = CircleTime::BuildTime.new("specify organization name")
 
-# you will get msec of build time 
-today = build_time.today
+# you will get msec of build time
+today = build_time.week
 
-puts today / 1000.0 / 60 # min
+puts today / 1000 / 60 # min
 ```
 
 you also can get any term.
