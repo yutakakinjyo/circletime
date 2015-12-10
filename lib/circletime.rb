@@ -9,6 +9,7 @@ module CircleTime
   class BuildTime
 
     def initialize(org)
+      Dotenv.load
       CircleCi.configure do |config|
         config.token = ENV['CIRCLE_CI_TOKEN']
       end
@@ -50,7 +51,7 @@ module CircleTime
     private
 
     def sum_build_time
-
+      build_sum = 0
       @res.body.each do |hash|
         info = OpenStruct.new(hash)
         next unless info.start_time
@@ -59,6 +60,7 @@ module CircleTime
           build_sum += info.build_time_millis if info.build_time_millis
         end
       end
+      (build_sum / 1000.0 / 60)
     end
 
   end
