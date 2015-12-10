@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/yutakakinjyo/circletime.svg)](https://travis-ci.org/yutakakinjyo/circletime)
 
-CircleTime get amount of build time from organization on CieclrCI.
+CircleTime get amount of build time from organization on [CircleCI](https://circleci.com/).  
+Free plan of CircleCI limit is 1,500 min build time. So sometimes we want to know how many spend build time already.
 
 ## Installation
 
@@ -22,7 +23,39 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### prepare
+
+```
+mv .env.sample .env
+```
+
+and set your CircleCI access token like a following
+
+.env
+```
+CIRCLE_CI_TOKEN='your access token'
+```
+
+## get build time
+
+```ruby
+require 'circletime'
+
+build_time = CircleTime::BuildTime.new("specify organization name")
+
+# you will get msec of build time
+today = build_time.today
+
+puts today / 1000 / 60 # min
+```
+
+you also can get any term.
+
+```ruby
+yestaday = build_time.yestaday
+week = build_time.week
+month = build_time.month
+```
 
 ## Development
 
