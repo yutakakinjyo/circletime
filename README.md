@@ -23,7 +23,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+mv .env.sample .env
+```
+
+and set your circle ci access token like following
+
+.env
+```
+CIRCLE_CI_TOKEN='your access token'
+```
+
+```ruby
+require 'circlecitime'
+
+build_time = CircleTime::BuildTime.new("specify organizaion name")
+
+# you will get msec of build time 
+today = build_time.today
+
+puts today / 1000.0 / 60 # min
+```
+
+you can get some term.
+
+```ruby
+yestaday = build_time.yestaday
+week = build_time.week
+month = build_time.month
+```
 
 ## Development
 
