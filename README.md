@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/yutakakinjyo/circletime.svg)](https://travis-ci.org/yutakakinjyo/circletime)
 
-CircleTime get amount of build time from organization on CieclrCI.
+CircleTime get amount of build time from organization on [CiecleCI](https://circleci.com/).  
+Free plan of CircleCI limit is 1,500 min build time. So sometimes we want to know how many spend build time already.
 
 ## Installation
 
