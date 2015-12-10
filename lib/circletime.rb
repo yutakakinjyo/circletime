@@ -60,7 +60,7 @@ module CircleTime
           build_sum += info.build_time_millis if info.build_time_millis
         end
       end
-      (build_sum / 1000.0 / 60)
+      build_sum
     end
 
   end
